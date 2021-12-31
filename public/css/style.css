@@ -4,8 +4,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Pushster', cursive;
-    
+    font-family:cursive;
+    /* 'Pushster', cursive */
 }
 
 :root{
@@ -162,33 +162,41 @@ footer p {
     background-color: var(--main-bg);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center; 
     border-radius: 5rem;
-    width: 25rem;
-    height: 25rem;
+    width: 23rem;
+    height: 23rem;
+    position: absolute;
+    right: 36rem;
     
     color: white;
 }
 .top_layer{
     display: flex;
     flex-direction: row;
-    font-size: 1 rem;
+    font-size:  1.5rem;
     
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 
 }
 #day{
    
-    padding-right:  120px;
-    padding-left: 12px;
+    position:absolute;
+    left: 63px;
     
+}
+#today_date{
+    position: absolute;
+    right: 65px;
 }
 
 .main_layer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.country_name{
+    font-size: 1rem;
 }
 
 /* search-bar in weather  */
@@ -197,7 +205,7 @@ footer p {
     margin-top: auto;
     height: 60px;
     background-color: #353b48;
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 10px;
     }
 
@@ -206,17 +214,19 @@ footer p {
     border: 0;
     outline: 0;
     background: none;
-    width: 0;
+    width: 450px;
     caret-color:transparent;
     line-height: 40px;
     transition: width 0.4s linear;
     }
 
-    .searchbar:hover > .search_input{
+    /* .searchbar:hover > .search_input{
     padding: 0 10px;
     width: 450px;
     caret-color:red;
     transition: width 0.4s linear;
-    }
+    } */
 
-    
+    #submitBtn{
+        color: violet;
+    }
