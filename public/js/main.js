@@ -1,16 +1,17 @@
 // alert('bolo shyam pyare ki jai')
 const cityName = document.getElementById('cityName');
 const submitBtn = document.getElementById('submitBtn');
-const temp = document.getElementById('temp')
+const temp = document.getElementById('temp');
 const city_name = document.getElementById('city_name');
 const temp_status = document.getElementById('tempStatus');
 const country_name = document.getElementById('country_name');
-const day = document.getElementById('day')
-
+const today_date = document.getElementById('today_date');
+const time = document.getElementById('time');
 const cur_city = document.getElementById('cur_city');
 
 
-
+today_date.innerText = new Date().toLocaleDateString();
+time.innerText = new Date().toLocaleTimeString();
 
 const getInfo = async (event)=>{
     event.preventDefault();
@@ -31,7 +32,7 @@ const getInfo = async (event)=>{
             temp.innerText = arrData[0].main.temp;
             country_name.innerText = arrData[0].sys.country;
             
-
+            
             
         } catch (error) {
             city_name.innerText = `Somthing Wrong!`

@@ -174,20 +174,23 @@ footer p {
 .top_layer{
     display: flex;
     flex-direction: row;
+    
+    
     font-size:  1.5rem;
     
-    padding-bottom: 25px;
+    
+    
 
 }
-#day{
+#time{
    
     position:absolute;
-    left: 63px;
+    left: 23px;
     
 }
 #today_date{
     position: absolute;
-    right: 65px;
+    right: 35px;
 }
 
 .main_layer{
